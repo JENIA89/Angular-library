@@ -14,8 +14,9 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { ReaderPageComponent } from './pages/reader-page/reader-page.component';
 import { LibrarianPageComponent } from './pages/librarian-page/librarian-page.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
-registerLocaleData(en);
+
 
 
 
@@ -36,7 +37,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzLayoutModule,
-    NzCardModule
+    NzCardModule,
+    NzTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
