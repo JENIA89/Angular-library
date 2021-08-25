@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
+import { ReaderPageComponent } from './pages/reader-page/reader-page.component';
+import { LibrarianPageComponent } from './pages/librarian-page/librarian-page.component';
 
 registerLocaleData(en);
 
@@ -22,6 +24,8 @@ registerLocaleData(en);
     AppComponent,
     MainLayoutComponent,
     CardPageComponent,
+    ReaderPageComponent,
+    LibrarianPageComponent,
    
    
   ],
