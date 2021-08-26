@@ -13,4 +13,8 @@ export class BooksService {
   getAll(): Observable<Book[]>{
    return this.http.get<Book[]>('https://61263a3d3ab4100017a68e22.mockapi.io/book') 
   }
+
+  delete(id: string): Observable<Book>{
+    return this.http.delete<Book>(`https://61263a3d3ab4100017a68e22.mockapi.io/book/${id}`) 
+  }
 }

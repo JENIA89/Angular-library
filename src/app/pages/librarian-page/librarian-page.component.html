@@ -1,5 +1,5 @@
-<div *ngIf="bookData$ | async as bookData; else loading">
-  <nz-table #basicTable>
+<div *ngIf="bookData; else loading">
+  <nz-table>
     <thead>
       <tr>
         <th>ID</th>
@@ -15,7 +15,9 @@
         <td>{{ data.title }}</td>
         <td>{{ data.author }}</td>
         <td>{{ data.isbn }}</td>
-        <td>Delete</td>
+        <td>
+          <a (click)="remove(data.id)">Delete</a>
+        </td>
       </tr>
     </tbody>
   </nz-table>
