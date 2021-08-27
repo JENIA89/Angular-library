@@ -1,0 +1,27 @@
+*{
+  text-align: center;
+}
+
+.user-card{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card{
+  border-radius: 5px;
+  border: #7dbcea solid 2px;
+  width: 30%;
+}
+.name{
+  color: #00d9ff;
+}
+.adres{
+  color: gainsboro;
+}
+.phone{
+  color: gainsboro;
+}
+button{
+  margin: 6px;
+}

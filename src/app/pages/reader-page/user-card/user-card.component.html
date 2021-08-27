@@ -1,0 +1,16 @@
+<div class="user-card">
+  <div class="card">
+    <img [src]="picture" alt="ava" width="150px">
+    <div>name reader: <span class="name">{{reader.name}}</span> </div>
+    <div>adres: <span class="adres">city Minsk</span></div>
+    <div>phone: <span class="phone">#888-888-888</span></div>
+    <div><button>update</button><button>delete</button></div>
+    <button (click)="goBack()">Back</button>
+
+    <div>
+      <input type="text" [(ngModel)]="reader.name" placeholder="enter name...">
+    </div>
+  </div>
+</div>
+
+
