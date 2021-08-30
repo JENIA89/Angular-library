@@ -20,6 +20,10 @@ export class ReaderService {
     return this.http.get<Reader>(`https://61263a3d3ab4100017a68e22.mockapi.io/users/${id}`);
   }
 
+  //addReader(newReader):Observable<Reader>{
+  //   return this.http.post <Reader>('https://61263a3d3ab4100017a68e22.mockapi.io/users', newReader);
+  // }
+
   // updateReader(): Observable<any>{
   //   return this.http.get<Reader>(`https://61263a3d3ab4100017a68e22.mockapi.io/users/${id}`);
   // }
@@ -28,8 +32,6 @@ export class ReaderService {
   //   return this.http.delete<Reader>(`https://61263a3d3ab4100017a68e22.mockapi.io/users/${id}`);
   // }
 
-  //addReader():Observable<Reader>{
-  //   return this.http.post <Reader>(`https://61263a3d3ab4100017a68e22.mockapi.io/users/${id}`);
-  // }
+
 
 }

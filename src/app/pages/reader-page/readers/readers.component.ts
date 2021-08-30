@@ -22,6 +22,10 @@ export class ReadersComponent implements OnInit {
       .subscribe(readers => this.readers = readers );
   }
 
+  addReader():void {
+
+  }
+
   goBack(): void {
     this.location.back();
   }
