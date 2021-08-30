@@ -16,6 +16,7 @@ import { ReaderPageComponent } from './pages/reader-page/reader-page.component';
 import { LibrarianPageComponent } from './pages/librarian-page/librarian-page.component';
 import { UserCardComponent } from './pages/reader-page/user-card/user-card.component';
 import { ReadersComponent } from './pages/reader-page/readers/readers.component';
+import { FormAddReaderComponent } from './pages/reader-page/form-add-reader/form-add-reader.component';
 
 registerLocaleData(en);
 
@@ -30,6 +31,7 @@ registerLocaleData(en);
     LibrarianPageComponent,
     UserCardComponent,
     ReadersComponent,
+    FormAddReaderComponent,
   ],
   imports: [
     BrowserModule,

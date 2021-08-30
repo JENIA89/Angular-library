@@ -7,9 +7,11 @@
   </a>
 </div>
 
-<div class="addReader"><button (click)="addReader()">Create new reader</button></div>
+<div class="addReader"><a routerLink="/addForm"><button>Create new reader</button></a></div>
 
 <div><button (click)="goBack()">Back</button></div>
+
+<!--<div class="addReader"><button (click)="addReader()"><a routerLink="/addForm">Create new reader</a></button></div>-->
 
 <!--<a routerLink="/detail/{{hero.id}}">-->
 <!--  <span class="badge">{{hero.id}}</span>{{hero.name}}-->

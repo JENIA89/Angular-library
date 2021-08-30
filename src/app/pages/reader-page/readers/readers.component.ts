@@ -9,6 +9,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./readers.component.scss']
 })
 export class ReadersComponent implements OnInit {
+
   readers: Reader[];
 
   constructor(
@@ -22,8 +23,10 @@ export class ReadersComponent implements OnInit {
       .subscribe(readers => this.readers = readers );
   }
 
-  addReader():void {
-
+  addReader(){                                              //addReader(): void {
+    const newReader = {id:7, name: 'Rick Martin'};
+    this.readerService.createReader(newReader)
+      .subscribe(dataReader => console.log(dataReader) );
   }
 
   goBack(): void {
