@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { CardPageComponent } from './shared/components/card-page/card-page.component';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,9 +16,6 @@ import { UserCardComponent } from './pages/reader-page/user-card/user-card.compo
 import { ReadersComponent } from './pages/reader-page/readers/readers.component';
 import { FormAddReaderComponent } from './pages/reader-page/form-add-reader/form-add-reader.component';
 
-registerLocaleData(en);
-
-
 
 @NgModule({
   declarations: [
@@ -28,7 +23,6 @@ registerLocaleData(en);
     MainLayoutComponent,
     CardPageComponent,
     ReaderPageComponent,
-    LibrarianPageComponent,
     UserCardComponent,
     ReadersComponent,
     FormAddReaderComponent,
@@ -40,7 +34,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzLayoutModule,
-    NzCardModule
+    NzCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,27 @@
-<p>librarian-page works!</p>
+<div *ngIf="bookData; else loading">
+  <nz-table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Isbn</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of bookData">
+        <td>{{ data.id }}</td>
+        <td>{{ data.title }}</td>
+        <td>{{ data.author }}</td>
+        <td>{{ data.isbn }}</td>
+        <td>
+          <a (click)="remove(data.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>
+<ng-template #loading>
+  <app-spin></app-spin>
+</ng-template>
