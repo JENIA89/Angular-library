@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     `
       .spin {
         text-align: center;
-        margin: 20px 0;
+        margin-top: 150px;
       }
     `
   ]
