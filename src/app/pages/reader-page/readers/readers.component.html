@@ -1,0 +1,27 @@
+<h1>Readers list</h1>
+
+<div *ngFor="let reader of readers" class="readers">
+  <a routerLink="/reader/{{reader.id}}" class="sel-red">
+    <div class="el-num">#{{reader.id}}</div>
+  <div class="el">{{reader.name}}</div>
+  </a>
+</div>
+
+<div class="addReader"><a routerLink="/addForm"><button>Create new reader</button></a></div>
+
+<div><button (click)="goBack()">Back</button></div>
+
+<!--<div class="addReader"><button (click)="addReader()"><a routerLink="/addForm">Create new reader</a></button></div>-->
+
+<!--<a routerLink="/detail/{{hero.id}}">-->
+<!--  <span class="badge">{{hero.id}}</span>{{hero.name}}-->
+<!--</a>-->
+
+<!--<h2>List heroes</h2>-->
+<!--<ul class="heroes">-->
+<!--  <li *ngFor="let hero of heroes">-->
+<!--    <a routerLink="/detail/{{hero.id}}">-->
+<!--      <span class="badge">{{hero.id}}</span>{{hero.name}}-->
+<!--    </a>-->
+<!--  </li>-->
+<!--</ul>-->

@@ -11,9 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { ReaderPageComponent } from './pages/reader-page/reader-page.component';
-
-
-
+import { LibrarianPageComponent } from './pages/librarian-page/librarian-page.component';
+import { UserCardComponent } from './pages/reader-page/user-card/user-card.component';
+import { ReadersComponent } from './pages/reader-page/readers/readers.component';
+import { FormAddReaderComponent } from './pages/reader-page/form-add-reader/form-add-reader.component';
 
 
 @NgModule({
@@ -22,8 +23,9 @@ import { ReaderPageComponent } from './pages/reader-page/reader-page.component';
     MainLayoutComponent,
     CardPageComponent,
     ReaderPageComponent,
-   
-   
+    UserCardComponent,
+    ReadersComponent,
+    FormAddReaderComponent,
   ],
   imports: [
     BrowserModule,

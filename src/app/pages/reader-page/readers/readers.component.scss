@@ -1,0 +1,32 @@
+*{
+  text-align: center;
+}
+h1{
+  color: #7dbcea;
+}
+.readers{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.addReader{
+margin: 10px;
+}
+
+.el{
+  margin-left: 8px;
+}
+
+.el-num{
+  color: gainsboro;
+}
+.sel-red:hover{
+  display: flex;
+  flex-direction: row;
+  background-color: #607D8B;
+}
+.sel-red{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
