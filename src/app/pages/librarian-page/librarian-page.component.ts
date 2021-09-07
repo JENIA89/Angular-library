@@ -1,7 +1,7 @@
-import { Book } from './../../shared/interfaces';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BooksService } from 'src/app/shared/services/books.service';
 import { Subscription } from 'rxjs';
+import { Book } from 'src/app/shared/interfaces/book.interface';
 
 @Component({
   selector: 'app-librarian-page',
@@ -25,6 +25,7 @@ export class LibrarianPageComponent implements OnInit, OnDestroy {
       this.bookData = books
     })
   }
+
 
   remove(id: string){
     this.dSub = this.bookService.delete(id).subscribe(()=>{

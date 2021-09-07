@@ -1,4 +1,7 @@
-<div *ngIf="bookData; else loading">
+<div *ngIf="bookData.length; else loading">
+  <button [routerLink]="['/librarian', 'create']" nz-button nzType="primary">
+    Create Book
+  </button>
   <nz-table>
     <thead>
       <tr>
@@ -17,6 +20,8 @@
         <td>{{ data.isbn }}</td>
         <td>
           <a (click)="remove(data.id)">Delete</a>
+          |
+          <a [routerLink]="['/librarian', 'edit', data.id]">Update</a>
         </td>
       </tr>
     </tbody>
